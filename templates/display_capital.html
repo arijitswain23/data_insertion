@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Capital</title>
+</head>
+<body>
+    <center>
+        <h1>Capital Details</h1>
+        <table border="3px">
+            <tr>
+                <th>State_Name</th>
+                <th>Cno</th>
+                <th>Capital_Name</th>
+                <th>Populations</th>
+            </tr>
+            {% for co in Capital %}
+            <tr>
+                <td>{{co.State_name}}</td>
+                <td>{{co.Cno}}</td>
+                <td>{{co.Capital_name}}</td>
+                <td>{{co.Population}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        </center>
+</body>
+</html>

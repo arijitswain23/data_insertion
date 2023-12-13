@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>State</title>
+</head>
+<body>
+    <center>
+    <h1>State Details</h1>
+    <table border="3px">
+        <tr>
+            <th>Sno</th>
+            <th>State_Name</th>
+            <th>Capital</th>
+        </tr>
+        {% for so in State %}
+        <tr>
+            <td>{{so.Sno}}</td>
+            <td>{{so.State_name}}</td>
+            <td>{{so.Capital}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </center>
+</body>
+</html>
